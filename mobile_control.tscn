@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpwp8hnlbbllg"]
+
+[ext_resource type="Texture2D" uid="uid://cbgi4b2dm8cga" path="res://art/pngwing.com.png" id="1_64xjq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmjq4"]
+size = Vector2(250, 400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18w8h"]
+size = Vector2(250, 400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_egy01"]
+size = Vector2(250, 400)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sh1of"]
+size = Vector2(250, 400)
+
+[node name="Mobilecontrol" type="CanvasLayer"]
+
+[node name="Right" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.54902)
+position = Vector2(232, 509)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_64xjq")
+shape = SubResource("RectangleShape2D_jmjq4")
+shape_visible = false
+action = "move_right"
+
+[node name="Left" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.54902)
+position = Vector2(227, 661)
+rotation = 3.14159
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_64xjq")
+shape = SubResource("RectangleShape2D_18w8h")
+shape_visible = false
+action = "move_left"
+
+[node name="Up" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.54902)
+position = Vector2(154, 582)
+rotation = 4.71239
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_64xjq")
+shape = SubResource("RectangleShape2D_egy01")
+shape_visible = false
+action = "move_up"
+
+[node name="Down" type="TouchScreenButton" parent="."]
+modulate = Color(1, 1, 1, 0.54902)
+position = Vector2(305, 588)
+rotation = 1.5708
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_64xjq")
+shape = SubResource("RectangleShape2D_sh1of")
+shape_visible = false
+action = "move_down"
